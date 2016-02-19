@@ -51,6 +51,7 @@ import org.mozilla.javascript.babylscript.BabylGenericTokenizer;
 import org.mozilla.javascript.babylscript.ChineseTokenizer;
 import org.mozilla.javascript.babylscript.CustomTokenizer;
 import org.mozilla.javascript.babylscript.CustomTokenizerConfig;
+import org.mozilla.javascript.babylscript.EsperantoTokenizer;
 import org.mozilla.javascript.babylscript.FrenchTokenizer;
 import org.mozilla.javascript.babylscript.GermanTokenizer;
 import org.mozilla.javascript.babylscript.JapaneseTokenizer;
@@ -261,6 +262,7 @@ public class TokenStream
         bn,
         de,
         en,
+        eo,
         es,
         fr,
         hi,
@@ -290,6 +292,8 @@ public class TokenStream
             return LanguageMode.de;
         else if ("en".equals(str))
             return LanguageMode.en;
+        else if ("eo".equals(str))
+            return LanguageMode.eo;
         else if ("es".equals(str))
             return LanguageMode.es;
         else if ("fr".equals(str))
@@ -336,6 +340,8 @@ public class TokenStream
             return "de";
         case en:
             return "en";
+        case eo:
+            return "eo";
         case es:
             return "es";
         case fr:
@@ -387,6 +393,9 @@ public class TokenStream
             break;
         case en:
             currentTokenizer = this.englishTokenizer;
+            break;
+        case eo:
+            currentTokenizer = new EsperantoTokenizer(parser, in, this);
             break;
         case es:
             currentTokenizer = new SpanishTokenizer(parser, in, this);

@@ -593,6 +593,7 @@ public class BabylTokenizer
         languageModeCodes.put("ar", TokenStream.LanguageMode.ar);
         languageModeCodes.put("de", TokenStream.LanguageMode.de);
         languageModeCodes.put("en", TokenStream.LanguageMode.en);
+        languageModeCodes.put("eo", TokenStream.LanguageMode.eo);
         languageModeCodes.put("es", TokenStream.LanguageMode.es);
         languageModeCodes.put("fr", TokenStream.LanguageMode.fr);
         languageModeCodes.put("pt", TokenStream.LanguageMode.pt);
