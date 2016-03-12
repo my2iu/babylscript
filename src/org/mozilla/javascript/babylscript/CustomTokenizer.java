@@ -54,9 +54,11 @@ import org.mozilla.javascript.TokenCharStream;
 import org.mozilla.javascript.TokenStream;
 import org.mozilla.javascript.babylscript.gen.Keywords;
 
+import com.google.gwt.core.shared.GwtIncompatible;
+
 public class CustomTokenizer extends BabylGenericTokenizer
 {
-    static class CustomPropertyResourceBundle extends ResourceBundle
+    static @GwtIncompatible class CustomPropertyResourceBundle extends ResourceBundle
     {
         Map<String, String> translations;
         CustomPropertyResourceBundle(Map<String, String> translations)  
