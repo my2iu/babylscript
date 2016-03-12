@@ -4018,7 +4018,7 @@ public final static String [] pl = {
 "__defineGetter__", "__definiujOdczyt__",
 "LN10", "ln10",
 "equals", "równy",
-"alert", "alert",
+"alert", "alarmować",
 "random", "losowy",
 "lastIndexOf", "OstatniIndeksOd",
 "toPrecision", "doPrecyzji",
