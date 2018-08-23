@@ -728,7 +728,7 @@ public final static String [] zh = {
 "const", "常量",
 "var", "变量",
 "catch", "捕获",
-"switch", "选择",
+"switch", "交换机",
 "finally", "最后",
 "goto", "跳转到",
 "while", "当",
