@@ -846,11 +846,15 @@ public class ScriptRuntime {
         if (locale == null) locale = Locale.ENGLISH;
         char decimalSeparator = '.';
         char zeroDigit = '0';
-        if (locale.getCountry().equals("fr")) decimalSeparator = ',';
-        else if (locale.getCountry().equals("pt")) decimalSeparator = ',';
-        else if (locale.getCountry().equals("es")) decimalSeparator = ',';
-        else if (locale.getCountry().equals("de")) decimalSeparator = ',';
-        else if (locale.getCountry().equals("ro")) decimalSeparator = ',';
+        /*
+         I don't this the code I wrote here for Babylscript ever worked, and it's not correct
+         since Javascript is explicitly designed to never localize numbers
+        if (locale.getLanguage().equals("fr")) decimalSeparator = ',';
+        else if (locale.getLanguage().equals("pt")) decimalSeparator = ',';
+        else if (locale.getLanguage().equals("es")) decimalSeparator = ',';
+        else if (locale.getLanguage().equals("de")) decimalSeparator = ',';
+        else if (locale.getLanguage().equals("ro")) decimalSeparator = ',';
+        */
         
         String str = number.replace('.', decimalSeparator);
         for (int n = 0; n < 10; n++)
