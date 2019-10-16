@@ -122,7 +122,7 @@ public final static String [] de = {
 "with", "mit",
 "boolean", "boolesch",
 "throw", "wirf",
-"char", "aeichen",
+"char", "zeichen",
 "short", "kurzzahl",
 "return", "rücksprung",
 };
